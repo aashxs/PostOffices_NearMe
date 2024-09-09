@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="before_click">
+      <section id="first">
+        <h1>Post Office Application</h1>
+        <p>
+          This Application Allows you to extract information about the nearest
+          Post Offices, based on your location.
+        </p>
+        <img src="assests/main_image.svg" alt="img" />
+      </section>
+      <section id="second">
+        <p id="ip_address"></p>
+        <button onclick="onBtnClick()">GET STARTED</button>
+      </section>
+    </div>
+    <div id="after_click">
+      <h1 id="heading"></h1>
+      <div id="location"></div>
+      <div id="map">
+        <h2>Your Current Location</h3>
+        <iframe id="mapFrame"></iframe>
+      </div>
+      <div id="more_information">
+        <h2>More Information About You</h3>
+      </div>
+      <div id="near_you">
+        <h2>Post Offices Near You:</h3>
+        <input
+          id="search_postoffice"
+          type="text"
+          placeholder="Search By Name"
+          onkeyup="search_post()"
+        />
+      </div>
+      <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
